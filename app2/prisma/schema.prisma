@@ -8,10 +8,11 @@ datasource db {
 
 generator client {
   provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
 }
 
 model Post {
-  id2        Int      @id @default(autoincrement())
+  id2       Int     @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   title     String   @db.VarChar(255)
