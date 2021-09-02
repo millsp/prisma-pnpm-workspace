@@ -1,5 +1,6 @@
 import { PrismaClient } from '.prisma/client'
 
+// comment test
 const prisma = new PrismaClient()
 
 async function main() {
